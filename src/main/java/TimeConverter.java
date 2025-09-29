@@ -11,21 +11,22 @@ public class TimeConverter {
         // - Loop until user chooses to exit
         Scanner sc = new Scanner(System.in);
         boolean cont = true;
-        System.out.println("Welcome to Distance converter");
+
         int hours = 0;
         int minutes = 0;
         int seconds = 0;
         String maybe = "";
         while (cont){
+            System.out.println("\nConvert time to total seconds\n");
             System.out.println("Enter hours: ");
             hours = sc.nextInt();
             System.out.println("Enter minutes: ");
             minutes = sc.nextInt();
             System.out.println("Enter seconds: ");
-            minutes = sc.nextInt();
+            seconds = sc.nextInt();
 
             System.out.println("\nTime Conversion: ");
-            System.out.println("Input: " + hours + "hour, " + minutes + " minute, " + seconds + " second");
+            System.out.println("Input: " + hours + " hour, " + minutes + " minute, " + seconds + " second");
             System.out.println("Total Seconds: " + (hours*3600 + minutes * 60 + seconds));
 
             System.out.println("\nCalculation: ");
@@ -39,6 +40,7 @@ public class TimeConverter {
             if (maybe.equals("y")) {
                 continue;
             } else{
+                System.out.println("Goodbye!");
                 cont = false;
             }
         }
