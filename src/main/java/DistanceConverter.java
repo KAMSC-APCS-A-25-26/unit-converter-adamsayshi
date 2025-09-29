@@ -16,7 +16,8 @@ public class DistanceConverter {
         double initial = 0;
         double fin = 0;
         while (cont){
-            System.out.println("Convert to 1. Kilometers 2. Miles or 3. Leave:  ");
+            System.out.println("Choose conversion direction:\n1. Convert Miles to Kilometers \n2. Kilometers to Miles\n3. Leave:  ");
+            System.out.println("Enter your choice: ");
             user = sc.nextInt();
             switch (user){
                 case 1:
