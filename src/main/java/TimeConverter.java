@@ -35,7 +35,7 @@ public class TimeConverter {
             System.out.println(seconds + " seconds = " + (seconds));
             System.out.println("Total Seconds: " + (hours*3600 + minutes * 60 + seconds));
 
-            System.out.print("\nDo you want to convert another time? (y/n)");
+            System.out.print("\nDo you want to convert another time? (y/n): ");
             maybe = sc.next();
             if (maybe.equals("y")) {
                 continue;

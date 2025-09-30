@@ -11,12 +11,11 @@ public class DistanceConverter {
         // - Handle invalid menu choices
         Scanner sc = new Scanner(System.in);
         boolean cont = true;
-        System.out.println("Welcome to Distance converter");
         int user = 0;
         double initial = 0;
         double fin = 0;
         while (cont){
-            System.out.println("\nChoose conversion direction:\n1. Convert Miles to Kilometers \n2. Kilometers to Miles\n3. Exit\n");
+            System.out.println("\nChoose conversion direction:\n1. Convert Miles to Kilometers\n2. Kilometers to Miles\n3. Exit\n");
             System.out.print("Enter your choice (1, 2, or 3): ");
             user = sc.nextInt();
 
