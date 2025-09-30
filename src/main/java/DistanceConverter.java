@@ -16,24 +16,29 @@ public class DistanceConverter {
         double initial = 0;
         double fin = 0;
         while (cont){
-            System.out.println("Choose conversion direction:\n1. Convert Miles to Kilometers \n2. Kilometers to Miles\n3. Leave:  ");
-            System.out.println("Enter your choice: ");
+            System.out.println("\nChoose conversion direction:\n1. Convert Miles to Kilometers \n2. Kilometers to Miles\n3. Exit\n");
+            System.out.println("Enter your choice (1, 2, or 3): ");
             user = sc.nextInt();
+
             switch (user){
                 case 1:
-                    System.out.println("Enter Miles:  ");
+                    System.out.println("Enter distance in miles:  ");
                     initial = sc.nextDouble();
                     fin = initial*1.60935;
-                    System.out.println("Kilometers is " + fin);
+                    System.out.println("\nConversion Results: ");
+                    System.out.println("Miles: " + initial);
+                    System.out.println("Kilometers: " + fin);
                     break;
                 case 2:
-                    System.out.println("Enter Kilometers:  ");
+                    System.out.println("Enter distance in kilometers:  ");
                     initial = sc.nextDouble();
                     fin = initial / 1.60935;
-                    System.out.println("Miles is " + fin);
+                    System.out.println("\nConversion Results: ");
+                    System.out.println("Kilometers: " + initial);
+                    System.out.println("Miles: " + fin);
                     break;
                 case 3:
-                    System.out.println("Bye bye");
+                    System.out.println("Goodbye!");
                     cont = false;
                     break;
                 default:
