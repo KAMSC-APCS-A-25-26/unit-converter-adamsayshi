@@ -38,7 +38,7 @@ public class TempConverter {
                     cont = false;
                     break;
                 default:
-                    System.out.println("I don't know that");
+                    System.out.println("Invalid choice\nPlease enter 1, 2, or 3");
                     break;
             }
         }

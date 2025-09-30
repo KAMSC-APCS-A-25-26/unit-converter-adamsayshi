@@ -15,7 +15,7 @@ public class DistanceConverter {
         double initial = 0;
         double fin = 0;
         while (cont){
-            System.out.println("\nChoose conversion direction:\n1. Convert Miles to Kilometers\n2. Kilometers to Miles\n3. Exit\n");
+            System.out.println("\nChoose conversion direction:\n1. Convert Miles to Kilometers\n2. Convert Kilometers to Miles\n3. Exit\n");
             System.out.print("Enter your choice (1, 2, or 3): ");
             user = sc.nextInt();
 
@@ -25,23 +25,23 @@ public class DistanceConverter {
                     initial = sc.nextDouble();
                     fin = initial*1.60935;
                     System.out.println("\nConversion Results: ");
-                    System.out.println("Miles: " + initial);
-                    System.out.println("Kilometers: " + fin);
+                    System.out.println("Miles: " + initial + "mi");
+                    System.out.println("Kilometers: " + fin + "km");
                     break;
                 case 2:
                     System.out.print("Enter distance in kilometers:  ");
                     initial = sc.nextDouble();
                     fin = initial / 1.60935;
                     System.out.println("\nConversion Results: ");
-                    System.out.println("Kilometers: " + initial);
-                    System.out.println("Miles: " + fin);
+                    System.out.println("Kilometers: " + initial + "km");
+                    System.out.println("Miles: " + fin + "mi");
                     break;
                 case 3:
                     System.out.println("Goodbye!");
                     cont = false;
                     break;
                 default:
-                    System.out.println("I don't know that");
+                    System.out.println("Invalid choice\nPlease enter 1, 2, or 3");
                     break;
             }
         }
