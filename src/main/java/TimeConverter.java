@@ -18,11 +18,11 @@ public class TimeConverter {
         String maybe = "";
         while (cont){
             System.out.println("\nConvert time to total seconds\n");
-            System.out.println("Enter hours: ");
+            System.out.print("Enter hours: ");
             hours = sc.nextInt();
-            System.out.println("Enter minutes: ");
+            System.out.print("Enter minutes: ");
             minutes = sc.nextInt();
-            System.out.println("Enter seconds: ");
+            System.out.print("Enter seconds: ");
             seconds = sc.nextInt();
 
             System.out.println("\nTime Conversion: ");
