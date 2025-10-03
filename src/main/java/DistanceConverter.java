@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class DistanceConverter {
     public static void main(String[] args) {
         // TODO: Implement distance converter
@@ -7,5 +9,41 @@ public class DistanceConverter {
         // - Use conversion factor: 1 mile = 1.60935 kilometers
         // - Display conversion results
         // - Handle invalid menu choices
+        Scanner sc = new Scanner(System.in);
+        boolean cont = true;
+        int user = 0;
+        double initial = 0;
+        double fin = 0;
+        while (cont){
+            System.out.println("\nChoose conversion direction:\n1. Convert Miles to Kilometers\n2. Convert Kilometers to Miles\n3. Exit\n");
+            System.out.print("Enter your choice (1, 2, or 3): ");
+            user = sc.nextInt();
+
+            switch (user){
+                case 1:
+                    System.out.print("Enter distance in miles:  ");
+                    initial = sc.nextDouble();
+                    fin = initial*1.60935;
+                    System.out.println("\nConversion Results: ");
+                    System.out.println("Miles: " + initial + "mi");
+                    System.out.println("Kilometers: " + fin + "km");
+                    break;
+                case 2:
+                    System.out.print("Enter distance in kilometers:  ");
+                    initial = sc.nextDouble();
+                    fin = initial / 1.60935;
+                    System.out.println("\nConversion Results: ");
+                    System.out.println("Kilometers: " + initial + "km");
+                    System.out.println("Miles: " + fin + "mi");
+                    break;
+                case 3:
+                    System.out.println("Goodbye!");
+                    cont = false;
+                    break;
+                default:
+                    System.out.println("Invalid choice\nPlease enter 1, 2, or 3");
+                    break;
+            }
+        }
     }
 }
